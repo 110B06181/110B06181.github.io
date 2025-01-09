@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花店名單收集頁</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f8f1f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #d94e8f;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #d94e8f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #b84373;
+        }
+        .disclaimer {
+            font-size: 12px;
+            color: #777;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>立即訂閱，解鎖 10% 首購優惠</h1>
+        <p>留下您的聯繫方式，獲取專屬優惠和花藝指南！</p>
+        <form action="#" method="POST">
+            <input type="text" id="name" name="name" placeholder="您的名字" required>
+            <input type="email" id="email" name="email" placeholder="您的電子郵件" required>
+            <input type="text" id="phone" name="phone" placeholder="您的手機號碼（選填）">
+            <button type="submit">立即領取優惠</button>
+        </form>
+        <p class="disclaimer">您的資訊絕對安全，我們不會分享給第三方。</p>
+    </div>
+</body>
+</html>
